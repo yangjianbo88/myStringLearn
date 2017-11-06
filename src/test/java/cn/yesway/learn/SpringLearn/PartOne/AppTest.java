@@ -19,6 +19,8 @@ public class AppTest extends TestCase {
 	App app;
 	@Autowired
 	IocInterfaceImpl impl;
+	@Autowired
+	IocInterfaceSImpl simpl;
 
 	@Test
 	public void testSay() {
@@ -50,7 +52,7 @@ public class AppTest extends TestCase {
 		// e.printStackTrace();
 		// }
 		
-		app.setIoc(impl);
+		app.setIoc(simpl);
 		app.say();
 	}
 
