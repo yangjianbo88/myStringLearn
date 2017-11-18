@@ -13,7 +13,8 @@ import cn.yesway.learn.SpringLearn.PartOne.Service.Impl.IocInterfaceImpl;
 import cn.yesway.learn.SpringLearn.PartOne.Service.Impl.IocInterfaceSImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath*:/applicationContext.xml" })
+//@ContextConfiguration(locations = { "classpath*:/applicationContext.xml" })
+@ContextConfiguration(classes = SpringConfig.class)
 public class AppTest extends TestCase {
 	@Autowired
 	App app;
